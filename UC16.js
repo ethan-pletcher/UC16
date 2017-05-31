@@ -1,10 +1,10 @@
 /**
- * Uses AJAX to query an internet data source for zip codes
- * @param {string} zipId The element id that has the zip code
+ * Uses AJAX to query an internet data source for age
+ * @param {string} AgeId The element id that has the age
  */
-function findZip(zipId) {
-    // First get the zip code from the HTML textbox
-    var zip = document.getElementById(zipId).value;
+function findage(ageId) {
+    // First get the age from the HTML textbox
+    var age = document.getElementById(ageId).value;
     // Now make a HTTP request
     var httpRequest = new XMLHttpRequest();
     httpRequest.onreadystatechange = function () {
@@ -23,8 +23,8 @@ function findZip(zipId) {
             // Waiting for a response...
         }
     };
-    // Notice how the URL is appended with the zip code
-    var url = "http://api.zippopotam.us/us/" + zip;
+    // Notice how the URL is appended with the age
+    var url = "http://www.anapioficeandfire.com/api/characters " + age;
     httpRequest.open("GET", url, true);
     httpRequest.send();
 }
@@ -49,14 +49,14 @@ function findZip(zipId) {
     };
 
 /**
- * Displays the zip code place given the JSON data
- * @param {string} data JSON data representing place for given zip code
+ * Displays the age place given the JSON data
+ * @param {string} data JSON data representing place for given age
  */
 function displayPlace(data){
     var place = JSON.parse(data);
     if(place.country === "none") {
         document.getElementById("place").className = "alert alert-warning";
-        document.getElementById("place").innerHTML = "No place matches that zip code."
+        document.getElementById("place").innerHTML = "No place matches that age."
     } else {
         document.getElementById("place").className = "alert alert-success";
         document.getElementById("place").innerHTML = place.places[0]["place name"] +
