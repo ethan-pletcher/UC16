@@ -6,6 +6,7 @@
           <meta charset="utf-8">
           <meta name="viewport" content="width=device-width, initial-scale=1">
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+          <link rel="stylesheet" href="UC16.css">
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
           <script src="ajaxFunctions.js"></script>
@@ -13,14 +14,31 @@
 
 <body>
           <div class="container">
-                    <h2>Zip Code Finder</h2>
-                    <br/>
-                    <p>Try entering a zip code like <b>90210</b> Beverly Hills, CA!</p>
+                    <h2>Game of Love</h2>
+                    <div>
+                              <div class="maxl">
+                                        <label class="radio inline">
+                                                  <input type="radio" name="sex" value="male" checked> <span> Male </span> </label>
+                                        <label class="radio inline">
+                                                  <input type="radio" name="sex" value="female"> <span>Female </span> </label>
+                              </div>
+                    </div>
+                    <br />
                     <div>
                               <div id="agebox" class="control-group">
-                                        <label for="age">Zip</label>
+                                        <label for="age">Age</label>
                                         <input type="text" name="age" id="age" placeholder="Type your age" /> </div>
                     </div>
+                    <br />
+                    <div>
+                              <input type="radio" name="reason" value="House Bywater">House Bywater
+                              <br>
+                              <input type="radio" name="reason" value="House Caron of Nightsong">House Caron of Nightsong
+                              <br>
+                              <input type="radio" name="reason" value="House Cassel">House Cassel
+                              <br>
+                              <input type="radio" name="reason" value="">Other
+                              <input type="text" name="other_house" /> </div>
                     <br />
                     <div>
                               <button class='btn btn-success btn-large' onclick="findDate('house','age','gender')">Find age</button>

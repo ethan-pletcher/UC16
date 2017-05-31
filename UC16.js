@@ -2,7 +2,7 @@
  * Uses AJAX to query an internet data source for age
  * @param {string} AgeId The element id that has the age
  */
-function findage(ageId) {
+function findDate(ageId, ) {
     // First get the age from the HTML textbox
     var age = document.getElementById(ageId).value;
     // Now make a HTTP request
