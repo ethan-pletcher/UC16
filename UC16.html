@@ -2,66 +2,72 @@
 <html>
 
 <head>
-          <title>Zip Code Finder</title>
-          <meta charset="utf-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-          <link rel="stylesheet" href="UC16.css">
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-          <script src="ajaxFunctions.js"></script>
+    <title>Zip Code Finder</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="UC16.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="ajaxFunctions.js"></script>
 </head>
 
 <body>
-          <div class="container">
-                    <h2>Game of Love</h2>
-                    <div>
-                              <div class="maxl">
-                                        <label class="radio inline">
-                                                  <input type="radio" name="sex" value="male" checked> <span> Male </span> </label>
-                                        <label class="radio inline">
-                                                  <input type="radio" name="sex" value="female"> <span>Female </span> </label>
-                                        <label class="radio inline">
-                                                  <input type="radio" name="sex" value="other"> <span>Other </span> </label>
-                              </div>
-                    </div>
-                    <br />
-                    <div>
-                              <div id="agebox" class="control-group">
-                                        <label for="age">Age</label>
-                                        <input type="text" name="age" id="age" placeholder="Type your age" /> </div>
-                    </div>
-                    <br />
-                    <div>
-                              <input type="radio" name="reason" value="House Bywater">House Bywater
-                              <br>
-                              <input type="radio" name="reason" value="House Caron of Nightsong">House Caron of Nightsong
-                              <br>
-                              <input type="radio" name="reason" value="House Cassel">House Cassel
-                              <br>
-                                <input type="radio" name="reason" value="House Algood">House Algood
-                              <br><input type="radio" name="reason" value="House Allyrion of Godsgrace">House Allyrion of Godsgrace
-                              <br><input type="radio" name="reason" value="House Amber">House Amber
-                              <br><input type="radio" name="reason" value="House Ambrose">House Ambrose
-                              <br><input type="radio" name="reason" value="House Appleton of Appleton">House Appleton of Appleton
-                              <br><input type="radio" name="reason" value="House Arryn of Gulltown">House Arryn of Gulltown
-                              <br><input type="radio" name="reason" value="House Arryn of the Eyrie">House Arryn of the Eyrie
-                              <br><input type="radio" name="reason" value="House Ashford of Ashford">House Ashford of Ashford
-                              <br><input type="radio" name="reason" value="House Baelish of Harrenhal">House Baelish of Harrenhal
-                              <br>
-
-
-                              <input type="radio" name="reason" value="">Other
-                              <input type="text" name="other_house" /> </div>
-                    <br />
-                    <div>
-                              <button class='btn btn-success btn-large' onclick="findDate('house','age','gender')">Find Match</button>
-                    </div>
-                    <br />
-                    <div>
-                              <div id="place" class=""></div>
-                    </div>
-          </div>
+    <div class="container">
+        <h2>Game of Love</h2>
+        <div>
+            <div class="maxl">
+                <label class="radio inline">
+                    <input type="radio" name="sex" value="male" checked> <span> Male </span> </label>
+                <label class="radio inline">
+                    <input type="radio" name="sex" value="female"> <span>Female </span> </label>
+                <label class="radio inline">
+                    <input type="radio" name="sex" value="other"> <span>Other </span> </label>
+            </div>
+        </div>
+        <br />
+        <div>
+            <div id="agebox" class="control-group">
+                <label for="age">Age</label>
+                <input type="text" name="age" id="age" placeholder="Type your age" /> </div>
+        </div>
+        <br />
+        <div>
+            <input type="radio" name="reason" value="House Bywater">House Bywater
+            <br>
+            <input type="radio" name="reason" value="House Caron of Nightsong">House Caron of Nightsong
+            <br>
+            <input type="radio" name="reason" value="House Cassel">House Cassel
+            <br>
+            <input type="radio" name="reason" value="House Algood">House Algood
+            <br>
+            <input type="radio" name="reason" value="House Allyrion of Godsgrace">House Allyrion of Godsgrace
+            <br>
+            <input type="radio" name="reason" value="House Amber">House Amber
+            <br>
+            <input type="radio" name="reason" value="House Ambrose">House Ambrose
+            <br>
+            <input type="radio" name="reason" value="House Appleton of Appleton">House Appleton of Appleton
+            <br>
+            <input type="radio" name="reason" value="House Arryn of Gulltown">House Arryn of Gulltown
+            <br>
+            <input type="radio" name="reason" value="House Arryn of the Eyrie">House Arryn of the Eyrie
+            <br>
+            <input type="radio" name="reason" value="House Ashford of Ashford">House Ashford of Ashford
+            <br>
+            <input type="radio" name="reason" value="House Baelish of Harrenhal">House Baelish of Harrenhal
+            <br>
+            <input type="radio" name="reason" value="">Other
+            <input type="text" name="other_house" /> </div>
+        <br />
+        <div>
+            <button class='btn btn-success btn-large' onclick="findDate('house','age','gender')">Find Match</button>
+        </div>
+        <br />
+        <div>
+            <div id="place" class=""></div>
+        </div>
+    </div>
 </body>
 
 </html>
