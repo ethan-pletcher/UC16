@@ -2,75 +2,100 @@
 <html>
 
 <head>
-    <title>Zip Code Finder</title>
+    <title>Game of Love</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="UC16.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="ajaxFunctions.js"></script>
+    <script src="UC16.js"></script>
 </head>
 
 <body>
     <div class="container">
         <h2>Game of Love</h2>
-        <div>
-            <div class="maxl">
+        <div class="maxl">
+            <h5>Gender</h5>
+            <label class="radio inline">
+                <input id="gender1" type="radio" name="gender" value="Male" checked> <span> Male </span> </label>
+            <label class="radio inline">
+                <input id="gender1" type="radio" name="gender" value="Female"> <span>Female </span> </label>
+        </div>
+        <br/>
+        <div class="maxl">
+            <h5>Class</h5>
+            <form id="title">
                 <label class="radio inline">
-                    <input type="radio" name="sex" value="male" checked> <span> Male </span> </label>
+                    <input id="title1" type="radio" name="title" value="Ser" checked> <span> Knight </span> </label>
                 <label class="radio inline">
-                    <input type="radio" name="sex" value="female"> <span>Female </span> </label>
+                    <input id="title1" type="radio" name="title" value="Lord"> <span> Lord </span> </label>
                 <label class="radio inline">
-                    <input type="radio" name="sex" value="other"> <span>Other </span> </label>
-            </div>
+                    <input id="title1" type="radio" name="title" value="Lady"> <span> Lady </span> </label>
+                <label class="radio inline">
+                    <input id="title1" type="radio" name="title" value="Queen"> <span> Queen </span> </label>
+                <label class="radio inline">
+                    <input id="title1" type="radio" name="title" value="King"> <span> King </span> </label>
+                <label class="radio inline">
+                    <input id="title1" type="radio" name="title" value="Peasant"> <span> Peasant </span> </label>
+            </form>
         </div>
         <br />
         <div>
-            <div id="agebox" class="control-group">
-                <label for="age">Age</label>
-                <input type="text" name="age" id="age" placeholder="Type your age" /> </div>
-        </div>
+            <input id="house1" type="radio" name="house" value="House Bywater">House Bywater
+            <br>
+            <input id="house1" type="radio" name="house" value="House Arryn of the Eyrie">House Arryn of the Eyrie
+            <br>
+            <input id="house1" type="radio" name="house" value="House Baelish of Harrenhal">House Baelish of Harrenhal
+            <br>
+            <input id="house1" type="radio" name="house" value="House Targaryen of King's Landing">House Targaryen of King's Landing
+            <br>
+            <input id="house1" type="radio" name="house" value="House Arryn of the Eyrie">House Arryn of the Eyrie
+            <br>
+            <input id="house1" type="radio" name="house" value="House Baratheon of Dragonstone">House Baratheon of Dragonstone
+            <br>
+            <input id="house1" type="radio" name="house" value="House Tully of Riverrun">House Tully of Riverrun
+            <br>
+            <input id="house1" type="radio" name="house" value="House Tyrell of Highgarden">House Tyrell of Highgarden
+            <br>
+            <input id="house1" type="radio" name="house" value="House Stark of Winterfell">House Stark of Winterfell
+            <br>
+            <input id="house1" type="radio" name="house" value="House Lannister of Casterly Rock">House Lannister of Casterly Rock
+            <br>
+            <input id="house1" type="radio" name="house" value="House Greyjoy of Pyke">House Greyjoy of Pyke
+            <br>
+            <input id="house1" type="radio" name="house" value="House Ashford of Ashford">House Ashford of Ashford
+            <br>
+            <input id="house1" type="radio" name="house" value="House Frey of the Crossing">House Frey of the Crossing
+            <br>
+            <input id="house1" type="radio" name="house" value="House Baelish of Harrenhal">House Baelish of Harrenhal
+            <br>
+            <input type="radio" name="other_house" value="">Other
+            <input id="house1" type="text" name="house" /> </div>
         <br />
         <div>
-
-            <input type="radio" name="reason" value="House Bywater">House Bywater<br>
-
-            <input type="radio" name="reason" value="House Arryn of the Eyrie">House Arryn of the Eyrie<br>
-
-            <input type="radio" name="reason" value="House Baelish of Harrenhal">House Baelish of Harrenhal<br>
-
-            <input type="radio" name="reason" value="House Targaryen of King's Landing">House Targaryen of King's Landing<br>
-
-            <input type="radio" name="reason" value="House Arryn of the Eyrie">House Arryn of the Eyrie<br>
-
-            <input type="radio" name="reason" value="House Baratheon of Dragonstone">House Baratheon of Dragonstone<br>
-
-            <input type="radio" name="reason" value="House Tully of Riverrun">House Tully of Riverrun<br>
-
-            <input type="radio" name="reason" value="House Tyrell of Highgarden">House Tyrell of Highgarden<br>
-
-            <input type="radio" name="reason" value="House Stark of Winterfell">House Stark of Winterfell<br>
-
-            <input type="radio" name="reason" value="House Lannister of Casterly Rock">House Lannister of Casterly Rock<br>
-
-            <input type="radio" name="reason" value="House Greyjoy of Pyke">House Greyjoy of Pyke<br>
-
-            <input type="radio" name="reason" value="House Frey of the Crossing">House Frey of the Crossing<br>
-
-            <input type="radio" name="reason" value="House Baelish of Harrenhal">House Baelish of Harrenhal<br>
-
-            <input type="radio" name="reason" value="">Other<input type="text" name="other_house" />
-        </div>
-        <br />
-        <div>
-            <button class='btn btn-success btn-large' onclick="findDate('house','age','gender')">Find Match</button>
-        </div>
-        <br />
-        <div>
-            <div id="place" class=""></div>
+            <button class='btn btn-success btn-large' onclick="testFetchAll()">Find Match</button>
         </div>
     </div>
+    <div id="output1"></div>
+    <center>
+        <div id="out">
+            <p1>Name:</p1>
+            <div id="Noutput"></div>
+            <br/>
+            <p1>Title:</p1>
+            <div id="Toutput"></div>
+            <br/>
+            <p1>Gender:</p1>
+            <div id="Goutput"></div>
+            <br/>
+            <p1>Email:</p1>
+            <div id="Eoutput"></div>
+            <br/>
+            <p1>Phone:</p1>
+            <div id="Poutput"></div>
+        </div>
+    </center>
 </body>
 
 </html>
